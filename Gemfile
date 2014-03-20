@@ -1,5 +1,26 @@
 source 'https://rubygems.org'
 
+ruby '2.1.0'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'pry-rails'
+  gem 'bond'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'rails_layout'
+end
+
+group :production do
+  gem 'rails_12factor'
+end
+
+gem 'thin'
+gem 'haml-rails'
+gem 'foundation-rails'
+gem 'foundation_rails_helper'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0.beta1'
