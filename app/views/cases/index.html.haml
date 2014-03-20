@@ -1,0 +1,3 @@
+- @cases.each do |_case|
+  - # can't use just 'case' as it's a reserved keyword
+  = link_to _case.title, case_path(_case)
