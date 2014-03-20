@@ -1,3 +1,7 @@
-- @cases.each do |_case|
-  - # can't use just 'case' as it's a reserved keyword
-  = link_to _case.title, case_path(_case)
+%h1 Case index
+
+.row
+  .medium-12.small-centered.columns
+    %table{width: '100%'}
+      %tbody
+        = render partial: 'case', collection: @cases, as: '_case'
