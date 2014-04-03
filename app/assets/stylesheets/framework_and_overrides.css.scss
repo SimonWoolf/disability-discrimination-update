@@ -10,7 +10,7 @@ $topbar-title-font-size: rem-calc(15);
 $sans-fonts: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $topbar-link-font-family: $sans-fonts;
 $topbar-bg: rgb(229, 229, 229);
-$topbar-dropdown-bg: #CCC;
+$topbar-dropdown-bg: rgb(229, 229, 229);
 $topbar-dropdown-link-color: #000;
 $topbar-dropdown-link-bg: #BBB;
 $topbar-dropdown-toggle-color: #000;
@@ -20,11 +20,11 @@ $topbar-link-color-active: #000;
 $topbar-link-color-active-hover: #000;
 $topbar-link-hover-lightness: +10%; // lighten by 10%
 $topbar-link-bg-hover: #BBB;
-$topbar-dropdown-label-color: #AAA;
 $topbar-menu-link-color: #000;
 $topbar-menu-icon-color: #000;
 $topbar-menu-link-color-toggled: #888;
 $topbar-menu-icon-color-toggled: #888;
+$topbar-menu-link-font-size: rem-calc(50);
 
 // import the CSS framework
 @import "foundation";
