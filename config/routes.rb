@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-root 'cases#index'
+root 'pages#about'
 
 resources :cases do
   collection do

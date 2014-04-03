@@ -3,8 +3,11 @@ $body-font-family: "Alegreya", Garamond, Baskerville, "Baskerville Old Face", "H
 $header-font-family: "Alegreya SC", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !default;
 $body-bg: #fff !default;
 $secondary-color: #e70000 !default;
-$topbar-link-font-size: rem-calc(15);
-$topbar-title-font-size: rem-calc(15);
+$base-font-size: 23px !default;
+$rem-base: $base-font-size !default;
+
+$topbar-link-font-size: 1rem;
+$topbar-height: 60px;
 
 // light topbar
 $sans-fonts: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
@@ -24,20 +27,19 @@ $topbar-menu-link-color: #000;
 $topbar-menu-icon-color: #000;
 $topbar-menu-link-color-toggled: #888;
 $topbar-menu-icon-color-toggled: #888;
-$topbar-menu-link-font-size: rem-calc(50);
 
 // import the CSS framework
 @import "foundation";
 
 // override for the 'Home' navigation link
 .top-bar .name {
-  line-height: rem-calc(45px); 
+  line-height: rem-calc(55px); 
 }
 #title {
   font-family: $header-font-family;
   color: $header-font-color;
-  font-size: $h5-font-size;
-  padding: 0 rem-calc(15px); 
+  font-size: 1.1rem;
+  padding: 0 1rem; 
 }
 
 h1, label {
@@ -48,7 +50,7 @@ h1, label {
 // create mixins using Foundation classes
 @mixin main {
   @extend .small-12;
-  @extend .medium-8;
+  @extend .medium-10;
   @extend .small-centered;
   @extend .columns;
   }

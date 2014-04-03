@@ -1,12 +1,10 @@
 %h1 Cases by name
 
-.row
-  .medium-12.small-centered.columns
-    %table{width: '100%'}
-      %tbody
-        - cases_by_initial = @cases.group_by { |c| c.title[0] }
-        - cases_by_initial.each_key do |initial|
-          %tr
-            %td
-              %h5= initial
-          = render partial: 'case', collection: cases_by_initial[initial], as: '_case'
+%table{width: '100%'}
+  %tbody
+    - cases_by_initial = @cases.group_by { |c| c.title[0] }
+    - cases_by_initial.each_key do |initial|
+      %tr
+        %td
+          %h3= initial
+      = render partial: 'case', collection: cases_by_initial[initial], as: '_case'
