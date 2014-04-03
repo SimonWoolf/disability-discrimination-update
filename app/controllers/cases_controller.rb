@@ -1,5 +1,5 @@
 class CasesController < ApplicationController
-  CASE_FIELDS = [:title, :summary, :facts, :held, :comment]
+  CASE_FIELDS = [:title, :summary, :keyword_list, :facts, :held, :comment]
 
   def index
     @cases = Case.all

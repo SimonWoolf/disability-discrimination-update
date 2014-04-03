@@ -1,6 +1,7 @@
 %h1 Add a new case
 = form_for @case do |f|
   = f.text_field :title
+  = f.text_field :keyword_list
   = f.text_area :summary
   = f.text_area :facts
   = f.text_area :held
