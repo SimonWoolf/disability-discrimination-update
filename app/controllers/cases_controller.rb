@@ -5,6 +5,13 @@ class CasesController < ApplicationController
     @cases = Case.all
   end
 
+  def index_by_keyword
+    @keywords = Case.tags_on(:keywords).map(&:name).sort
+    @cases_by_keyword = Hash[@keywords.map do |keyword|
+      [keyword, Case.tagged_with(keyword)]
+    end]
+  end
+
   def create
     @case = Case.new(params[:case].permit(CASE_FIELDS))
     if @case.save

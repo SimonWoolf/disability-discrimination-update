@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
 
-resources :cases
+root 'cases#index'
+
+resources :cases do
+  collection do
+    get 'by-keyword' => 'cases#index_by_keyword', as: :by_keyword
+  end
+end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'cases#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
