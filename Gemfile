@@ -17,6 +17,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'acts-as-taggable-on'
+
 gem 'thin'
 gem 'haml-rails'
 gem 'foundation-rails'
