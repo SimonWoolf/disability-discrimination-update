@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
 root 'cases#index'
 
 resources :cases do
@@ -7,6 +6,9 @@ resources :cases do
     get 'by-keyword' => 'cases#index_by_keyword', as: :by_keyword
   end
 end
+
+get 'about' => 'pages#about'
+get 'contact' => 'pages#contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
