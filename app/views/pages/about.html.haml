@@ -1,11 +1,12 @@
-%h2 Disability Discrimination Update
-%h4 From Spencer Keen and Monika Sobiecki
+%h2#inpagetitle Disability Discrimination Update
+%h4#byline From Spencer Keen and Monika Sobiecki
 
-%p This site contains case summaries of almost every significiant disability discrimination appeal since 2010.  We hope you find it useful.   You are welcome to use the summaries but please acknowledge both Spencer and Monika when you do.
+
+%p This site contains case summaries of almost every significiant disability discrimination appeal since 2010.  We hope you find it useful.   You are welcome to use the summaries but please acknowledge both #{link_to "Spencer and Monika", contact_path} when you do.
 
 .row
   .small-6.medium-4.medium-offset-1.columns
-    = image_tag "spencer.jpg", class: 'portrait'
+    = link_to "Cases by name", cases_path, class: 'expand radius round button caseslink'
   .small-6.medium-4.medium-offset-1.columns.end
-    = image_tag "monika.jpg", class: 'portrait'
+    = link_to "Cases by keyword", by_keyword_cases_path, class: 'expand radius round button caseslink'
 
