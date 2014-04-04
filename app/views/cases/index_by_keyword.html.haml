@@ -6,4 +6,4 @@
       %tr
         %td
           %h3= keyword
-      = render partial: 'case', collection: @cases_by_keyword[keyword], as: '_case'
+      = render partial: 'case', collection: @cases_by_keyword[keyword].sort_by(&:title), as: '_case'
