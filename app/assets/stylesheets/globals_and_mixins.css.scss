@@ -1,0 +1,8 @@
+// Variables & mixins I want to import in any file
+// Don't put styles here, they'll be imported multiple times
+
+$serif-fonts: "Alegreya", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !default;
+$serif-sc-fonts: "Alegreya SC", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !default;
+$sans-fonts: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+
+$base-font-size: 23px !default;

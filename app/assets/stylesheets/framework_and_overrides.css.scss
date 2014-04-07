@@ -1,16 +1,16 @@
+@import "globals_and_mixins";
+
 //Overrides to foundation defaults (need to be before import):
-$body-font-family: "Alegreya", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !default;
-$header-font-family: "Alegreya SC", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !default;
+$body-font-family: $serif-fonts;
+$header-font-family: $serif-sc-fonts;
 $body-bg: #fff !default;
 $secondary-color: #e70000 !default;
-$base-font-size: 23px !default;
 $rem-base: $base-font-size !default;
 
 $topbar-link-font-size: 1rem;
 $topbar-height: 60px;
 
 // light topbar
-$sans-fonts: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $topbar-link-font-family: $sans-fonts;
 $topbar-bg: rgb(229, 229, 229);
 $topbar-dropdown-bg: rgb(229, 229, 229);
