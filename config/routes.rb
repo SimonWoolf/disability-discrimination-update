@@ -7,8 +7,13 @@ resources :cases do
   end
 end
 
+get 'admin' => 'admin#dashboard'
 get 'about' => 'pages#about'
 get 'contact' => 'pages#contact'
+
+get '/auth/:provider/callback' => 'admin#dashboard'
+# only needed for developer
+post '/auth/developer/callback' => 'admin#dashboard'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,4 +1,8 @@
 class CasesController < ApplicationController
+  http_basic_authenticate_with CREDENTIALS.merge(only: [:create, :update, :delete])
+
+  before_action :retrieve_case, only: [:show, :edit, :update, :destroy]
+  
   CASE_FIELDS = [:title, :summary, :keyword_list, :facts, :held, :comment]
 
   def index
@@ -30,12 +34,26 @@ class CasesController < ApplicationController
   end
 
   def show
-    @case = Case.find(params[:id])
   end
 
   def update
+    if @case.update(params[:case].permit(CASE_FIELDS))
+      flash[:notice] = "Saved"
+    else
+      flash[:error] = "Error: failed to save"
+    end
+    redirect_to admin_path
   end
 
   def destroy
+    @case.destroy
+    flash[:notice] = "Case deleted"
+    redirect_to admin_path
+  end
+
+  protected
+
+  def retrieve_case
+    @case = Case.find(params[:id])
   end
 end

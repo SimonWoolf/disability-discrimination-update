@@ -1,0 +1,12 @@
+@import "globals_and_mixins";
+
+a.button, input.button {
+  font-family: $sans-fonts;
+  font-size: $base-font-size;
+}
+
+a.button.intable, input.intable.button {
+  padding: 0.2rem 0.4rem;
+  margin-bottom: 0;
+}
+

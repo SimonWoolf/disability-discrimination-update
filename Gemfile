@@ -17,6 +17,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'omniauth'
+gem "omniauth-google-oauth2"
 gem 'acts-as-taggable-on'
 
 gem 'thin'

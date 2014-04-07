@@ -1,0 +1,12 @@
+%h1 Admin dashboard
+
+= link_to 'Add a new case', new_case_path, class: 'button success', id: 'newcasebutton'
+
+%table{width: '100%'}
+  %tbody
+    - cases_by_initial = @cases.group_by { |c| c.title[0] }
+    - cases_by_initial.each_key.sort.each do |initial|
+      %tr
+        %td
+          %h3= initial
+      = render partial: 'case', collection: cases_by_initial[initial].sort_by(&:title), as: '_case'

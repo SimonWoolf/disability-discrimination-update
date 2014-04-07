@@ -42,7 +42,7 @@ $topbar-menu-icon-color-toggled: #888;
   padding: 0 1rem; 
 }
 
-h1, label {
+h1, label, form, .alert-box {
   font-family: $sans-fonts;
 }
 
@@ -56,7 +56,6 @@ h1, label {
 // create mixins using Foundation classes
 @mixin main {
   @extend .small-12;
-  @extend .medium-10;
   @extend .small-centered;
   @extend .columns;
   }

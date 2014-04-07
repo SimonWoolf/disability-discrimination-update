@@ -1,0 +1,5 @@
+%tr
+  %td
+    %p= link_to _case.title, case_path(_case)
+  %td= link_to 'edit', edit_case_path(_case), class: 'intable button'
+  %td= button_to 'delete', case_path(_case), method: :delete, data: {confirm: 'Are you sure you want to delete this case?'}, class: 'intable alert button'
