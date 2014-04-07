@@ -1,12 +1,12 @@
 # This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+# The data can then be loaded with the rake db:seed (or create!d alongside the db with db:setup).
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+#   cities = City.create!([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create!(name: 'Emanuel', city: cities.first)
 
-Case.create(title: "Ahmed v Metroline Travel Ltd UKEAT/0400/10/JOJ",
+Case.create!(title: "Ahmed v Metroline Travel Ltd UKEAT/0400/10/JOJ",
             keyword_list: "Meaning of Disability – Guidance on the Meaning of Disability",
             summary: "At a pre-hearing review the ET held that C was not disabled for the purposes of s.1 DDA 1995.  C appealed.  At a pre-hearing review the ET held that C was not disabled for the purposes of s.1 DDA 1995.  C appealed.",
             facts: "In 2008, C , who was a bus driver, suffered a whiplash injury in an accident.  He did not return to work. Initially R’s doctor agreed that C was unfit for work and indicated that C would benefit from physiotherapy to help speed up recovery.  However, in February 2009 R’s doctor (Dr Kahtan) advised that C was fit for work.  She also stated that C had said a number of things which were inconsistent with him having a disability; for example that he was driving his own car, playing football with his children and lifting weights.  After two medical capability hearings C was dismissed for incapability.  C denied that he had been properly examined in February 2009 and denied saying the things that Dr Kahtan alleged he had.  C brought a claim of disability discrimination.  The ET accepted Dr Khatan’s account of the February 2009 meeting and held that C was not disabled.",
@@ -16,7 +16,7 @@ Although the ET, when making its decision, referred to the statutory Guidance, i
             comment: "The facts of this case are perhaps more interesting and informative than the discussion of the legal principles.  The Respondent successfully argued that C’s account of his disability was false and that he was not disabled even though C had produced medical evidence from a consultant and his GP and even though R had dismissed C for incapability.  It shows the value of seeking independent medical advice at an early stage and taking a robust approach to the question of whether or not the Claimant has a disability.")
 
 
-Case.create(title: "British Midland Airways v Hamed UKEAT/0292/10/RN",
+Case.create!(title: "British Midland Airways v Hamed UKEAT/0292/10/RN",
 keyword_list: " Reasonable Adjustments – Burden of Proof – Proof of Adjustment",
 summary: "C succeeded in a claim of disability discrimination in the ET. R appealed firstly on the basis that the ET had
 focused on what adjustments R had considered rather than what adjustments it should have made. Secondly R
@@ -51,7 +51,7 @@ consistent with C having discharged the burden of proof and in this context HHJ 
 controversial as it seems (NB – there appears to be a mistaken reference to Claimant rather than Appellant in
 the last paragraph).")
 
-Case.create(title: "Burke v College of Law & Ors UKEAT/0301/10/SM",
+Case.create!(title: "Burke v College of Law & Ors UKEAT/0301/10/SM",
 keyword_list: " Reasonable Adjustments – Competence Standards - Qualifications Bodies - Adjusting Time Allowed
 for Sitting Exams",
 summary: "The EAT upholds a finding that the College of Law was not required to adjust the time within which it required
@@ -85,7 +85,7 @@ adjustment was required by the DDA.
 [2] Cf: Hart v Chief Constable of Derbyshire Constabulary UKEAT/0403/07/ZT")
 
 
-Case.create(title: "Marks & Spencer v Powell UKEAT/0258/10/LA",
+Case.create!(title: "Marks & Spencer v Powell UKEAT/0258/10/LA",
 keyword_list: " Reasonable Adjustments – Comparator - Constructive Dismissal",
 summary: "ET held that the R had failed to make reasonable adjustments and that C had been constructively dismissed.
 Appeal allowed.",
@@ -120,7 +120,7 @@ arrangement but also with someone who was not disadvantaged by that arrangement.
 seem to have applied the second part of this test. For more commentary on this issue see the article Comparing
 Comparators (March 2011) in the Articles Tab.")
 
-Case.create(title: "Breakell v Shropshire Army Cadet Force UKEAT/0372/10/RN",
+Case.create!(title: "Breakell v Shropshire Army Cadet Force UKEAT/0372/10/RN",
 keyword_list: "Disability Discrimination – Employment Status – Whether Volunteer Covered by DDA",
 summary: "C was an Adult Instructor in the Army Cadet Force. He was a volunteer and was not paid. The ET held that he
 was not a worker within the meaning of DDA 1995, s.68(1) and so could not make a claim of disability
@@ -152,7 +152,7 @@ interesting idea nonetheless!")
 
 
 
-Case.create(title: "JP Morgan v Chweidan [2011] EWCA Civ 648",
+Case.create!(title: "JP Morgan v Chweidan [2011] EWCA Civ 648",
 keyword_list: "Direct Discrimination – Comparators – Disability Related Discrimination – Remission to the ET",
 summary: "C made claims of disability discrimination. The ET concluded that: (i) he had been unfairly dismissed; (ii) he had
 been directly discriminated against; and (iii) he had not been discriminated against for a reason related to his
@@ -190,7 +190,7 @@ disability is defined by ability, the comparator will almost always be a clone o
 discrimination claims based on disability will almost always fail.")
 
 
-Case.create(title: "Lancaster v TBWA Manchester UKEAT/0460/10/DA",
+Case.create!(title: "Lancaster v TBWA Manchester UKEAT/0460/10/DA",
 keyword_list: "Reasonable Adjustments – Whether Reasonable to Change Selection Criteria for Redundancy",
 summary: "C claimed that, during a redundancy selection exercise, R had failed to make reasonable adjustments and had
 discriminated against him on grounds of his age. The ET dismissed his complaint and C appealed to the EAT.",
@@ -225,7 +225,7 @@ they were not satisfied, on the evidence, that any adjustments would have preven
 redundancy.")
 
 
-Case.create(title: "Newcastle City Council v Spires UKEAT/0334/10/ZT",
+Case.create!(title: "Newcastle City Council v Spires UKEAT/0334/10/ZT",
 keyword_list: "Reasonable Adjustments – Constructive Dismissal – Whether Claiming Sick Pay Affirms Contract",
 summary: "C succeeded in a claim of disability discrimination and constructive unfair dismissal in the ET. R appealed.",
 facts: "C went off sick with stress and raised a grievance. She stated that her illness was stress related and was caused
@@ -261,7 +261,7 @@ pay has been exhausted. Employers who delay dealing with issues while an employe
 an unfair constructive dismissal claim even at the end of the sick leave even if the sick leave has been lengthy.")
 
 
-Case.create(title: "Noor v Foreign & Commonwealth Office UKEAT/0470/10/SM",
+Case.create!(title: "Noor v Foreign & Commonwealth Office UKEAT/0470/10/SM",
 keyword_list: "Reasonable Adjustments in Recruitment – Identifying the Disadvantage – Effectiveness of
 Adjustment",
 summary: "C was applied for a position with R and claimed he was discriminated against during the recruitment process. His
@@ -285,7 +285,7 @@ firmly in mind the shifting burden of proof in reasonable adjustments cases and 
 might not be identified until a late stage in the proceedings. His Honour stated that “It is certainly not the law
 that an adjustment will only be reasonable if it is completely effective” (see para. 33). His Honour also disagreed
 with the ET’s analysis of the disadvantage caused by the PCP. The purpose of the adjustment was to eliminate
-the practical difficulty and embarrassment which the PCP caused and to create a level playing field for the
+the practical difficulty and embarrassment which the PCP caused and to create! a level playing field for the
 disabled person in interview. It was not fatal to C’s case that he or she would not have obtained the job
 although it was obviously relevant to quantum.",
 comment: "The difference between the outcome in this case and that in Lancaster v TBWA (see 2011/Q1/p.3) is striking and
@@ -298,7 +298,7 @@ extent to which an adjustment must prevent a disadvantage before an employer is 
 appearances both this case and Lancaster are consistent with the approach of Underhill J.")
 
 
-Case.create(title: "Queensway Surgery v Jayatilaka UKEAT/0046/11/SM",
+Case.create!(title: "Queensway Surgery v Jayatilaka UKEAT/0046/11/SM",
 keyword_list: "Amendment to ET1 – Addition of Reasonable Adjustments Claim",
 summary: "C presented an ET1 complaining of unfair constructive dismissal on 11.09.09. On 12.01.10 she wrote to ET asking
 to amend her claim to include a disability discrimination claim. The ET allowed the amendment and R appealed.",
@@ -330,7 +330,7 @@ evidence was required, HHJ Clark held that the addition of the DDA claims was no
 there was no causative link between the primary facts and the consequences under the DDA that were
 contended for by way of an amendment.")
 
-Case.create(title: "Leeds Teaching Hospital NHS Trust v Foster UKEAT/0552/10/JOJ",
+Case.create!(title: "Leeds Teaching Hospital NHS Trust v Foster UKEAT/0552/10/JOJ",
 keyword_list: " 	Disability Discrimination – Reasonable Adjustments – Re-deployment - Whether Adjustment must be Effective",
 summary: "C went on long term sick leave after a period of alleged bullying by his line manager in the security deparment.  C’s grievance about the bullying was rejected.  R refused to consider C’s ongoing concerns and C resigned.  C claimed that R had failed to make reasonable adjustments.  The ET upheld the claim and R appealed.",
 facts: "C had been employed by R for many years.  In 2006 his relationship with his line manager broke down. He was signed off work from October 2006 with stress and never returned.  After commencing sick leave C lodged a grievance that alleged he had been bullied.   R rejected the grievance.  R’s occupational health department (“OH”) advised that C was fit to return to work and so R told C that he would have to return work in the security department.  However, after another meeting with C, OH advised that although R took the view that the grievance had been resolved C did not share that view and that for C the problem, rightly or wrongly, still existed.  OH advised that, so long as C held this view, he would not be able to return to work in the security department.  Initially R took the view that the grievance had been dealt with and that if C could not work in the security department he should be dismissed.  However, In late 2008 C was placed on the redeployment register for 3 months but no post was found.  The line manager who had allegedly bullied C then left the security department.  As a result C informed R that he could now return to work but that he would like to discuss his ongoing concerns with R.  Unfortunately R refused to enter into any discussions with C and C then became unfit for work again.   This time OH could not say when C would be fit to return so R dismissed him for capability.",
@@ -340,7 +340,7 @@ comment: "This is an important case for those considering a respondent’s duty 
 
 
 
-Case.create(title: "Price v Transport for London UKEAT/0005/11/JOJ",
+Case.create!(title: "Price v Transport for London UKEAT/0005/11/JOJ",
 keyword_list: " 	Reasonable Adjustments – Time Limits – Extension of Time",
 summary: "C alleged that R had failed to make reasonable adjustments.  The ET held that her claim was presented out of time and refused to grant an extension of time.  C appealed.",
 facts: "C was a ticket inspector on buses.  She had to generate reports using a template.  She had difficulty reading and writing and was diagnosed as dyslexic.  In May 2006 C was assessed by R’s consultant who recommended that she have a screen reader and voice recognition software.  There was a delay in providing the software and C lodged a grievance in October 2008.  R then provided C with the software to help her with reading and writing but did not provide any training on how to use it despite repeated requests.  C eventually wrote a letter dated 28.01.09 complaining that R had failed to make reasonable adjustments for her disability by not training her in the use of the software.  At around the same time R also made a conscious decision to only provide C with a DVD - so that she could train herself.  C presented her ET1 on 04.10.09.  The ET held that her claim was out of time and refused to extend time.  C appealed on the basis that the discretion to extend time was wrongly exercised.",
@@ -351,7 +351,7 @@ This case will encourage respondents to take preliminary points in reasonable ad
 
 
 
-Case.create(title: "R (on the application of Rahman) v Birmingham City Council [2011] EWHC 944 (Admin)",
+Case.create!(title: "R (on the application of Rahman) v Birmingham City Council [2011] EWHC 944 (Admin)",
 
 keyword_list: " 	Judicial Review – Public Sector Equality Duty – Defective Equality Impact Assessment",
 summary: "The Cs were users of a service (LEAS) which provided free advice on various matters to the local community.  D made a decision which interrupted the funding of the scheme and Cs applied for a judicial review of the decision.",
@@ -362,7 +362,7 @@ comment: "The two judicial review cases summarised this quarter illustrate the b
 
 
 
-Case.create(title: "R (on the application of W) v Birmingham City Council [2011] EWHC 1147 (Admin)",
+Case.create!(title: "R (on the application of W) v Birmingham City Council [2011] EWHC 1147 (Admin)",
 keyword_list: " 	Judicial Review – Public Sector Equality Duty – Defective Equality Impact Assessment",
 summary: "The Cs were all severely disabled adults living in Birmingham.  D decided to confine the caring support it provided to a more limited range of people.   The Cs sought to challenge this decision.  One of the principle grounds of challenge was that D had failed to have regard to the Public Sector Equality Duty (PSED).",
 facts: "Prior to the financial year 2011/2012 D had provided support for those whose needs were assessed as “substantial” or “critical”.  After 2011/2012 D decided only to provide support to those whose needs were “critical”.  When making this decision D produced and had regard to an Equality Impact Assessment (EIA).  Cs argued that: (1) in order to have “due regard” to the PSED, D had to consider whether savings could be found in other areas in order to maintain the level of spending on adult social care; and (2) that the EIA was inadequate as it did not consider the impact on disabled people or the merits of other approaches.",
@@ -372,7 +372,7 @@ JRs based on the PSED are likely to become more frequent as claimants and their 
 
 
 
-Case.create(title: "Wilcox v Birmingham Cab Services Limited UKEAT/0293/10/DM",
+Case.create!(title: "Wilcox v Birmingham Cab Services Limited UKEAT/0293/10/DM",
 keyword_list: " 	Direct Disability Discrimination – Constructive Knowledge – Reliance on Medical Evidence",
 summary: "C suffered from agoraphobia which gave her travel anxiety and prevented her from using public transport.  She asked to work closer to her home and resigned when R refused to move her on a permanent basis.  The ET held that R did not have sufficient knowledge of her disability for any duty to make adjustments to arise.",
 facts: "C was required to take a pay cut which meant that she could no longer afford to pay for parking.  C did not wish to use public transport and asked to work closer to home.  R’s CEO met with C and asked her why she would not use public transport and whether there was an underlying medical condition preventing her from using it.  C said that using public transport made her anxious but that she had never investigated whether there was an underlying medical condition.  C followed up the request in writing but did not mention her travel anxiety.  C was not moved to the bureau she requested and was then signed off sick with “work related stress”, never to return to work.  
@@ -381,7 +381,7 @@ held: "The ET held that R did not know and could not be expected to know, before
 comment: "Only imposing constructive knowledge on an employer if they have an “authoritative” medical opinion is, on the face of it a surprising proposition.   However, the question of whether a respondent has constructive knowledge is a question of fact.  Where a claimant has made it difficult to obtain independent advice about their disability and the employment relationship is under strain, respondents would appear to be able to argue that they were entitled to be skeptical about assertions made by the claimant about his/her disability and to wait for their own medical advice.")
 
 
-Case.create(title: "Salford NHS Primary Care Trust v Smith UKEAT/0005/11/JOJ",
+Case.create!(title: "Salford NHS Primary Care Trust v Smith UKEAT/0005/11/JOJ",
 keyword_list: "Reasonable Adjustments – Constructive Dismissal – Light Duties – Career Break",
 summary: "C was a physiotherapist who suffered from chronic fatigue syndrome. She went on long term sick leave and was
 unable to return to her post or to perform any productive work. She claimed that R had failed to make
@@ -421,7 +421,7 @@ been required to provide her with this sort of work in these circumstances.")
 
 
 
-Case.create(title: "Barnsley MBC v Norton & Ors [2011] EWCA Civ 834",
+Case.create!(title: "Barnsley MBC v Norton & Ors [2011] EWCA Civ 834",
 keyword_list: "Disability Discrimination – Public Sector Equality Duty – When Applicable – Proceedings for Possession",
 summary: "The Defendants were Samantha Norton (SN) who is a disabled child, and her parents Mr and Mrs Norton. Mr
 Norton lost his job and was unable to keep paying rent to C. C started possession proceedings. The Ds
@@ -452,7 +452,7 @@ http://www.youtube.com/watch?v=ITUSZ6LRHrk.")
 
 
 
-Case.create(title: "Chief Constable of West Midlands Police v Gardner UKEAT/0174/11/DA",
+Case.create!(title: "Chief Constable of West Midlands Police v Gardner UKEAT/0174/11/DA",
 keyword_list: " Disability Discrimination – Reasonable Adjustments – Identification of Disadvantage – Calculation of Pension Losses – Ogden Tables",
 summary: "C was a police officer who was injured while on operational duties. The parties were agreed that C was disabled
 but not on the nature of the disability. The ET held that R had failed to make the reasonable adjustment of
@@ -488,7 +488,7 @@ have made.")
 
 
 
-Case.create(title: "Cordell v Foreign office UKEAT/0016/11/SM",
+Case.create!(title: "Cordell v Foreign office UKEAT/0016/11/SM",
 keyword_list: "Disability Discrimination – Reasonable Adjustments – Cost of Adjustment – Direct Discrimination",
 summary: "C, who was deaf, was employed by R as First Secretary in Warsaw. This was a senior position and she was
 provided with a lipspeaker. She came to be redeployed but was refused a new position as R considered that the
@@ -527,7 +527,7 @@ cost is unreasonable having regard to a pre-determined budget.")
 
 
 
-Case.create(title: "Dominic Faversham Group v McIntyre UKEAT/0290/11/JOJ",
+Case.create!(title: "Dominic Faversham Group v McIntyre UKEAT/0290/11/JOJ",
 keyword_list: "Disability discrimination – Practice and procedure – Postponement or stay of proceedings",
 summary: "C alleged that R had directly discriminated against him on grounds of disability, had failed to make reasonable
 adjustments, and that he had been constructively dismissed as a result. R alleged that C had breached his
@@ -558,7 +558,7 @@ readily adopted the principles in Carter v Credit Change.")
 
 
 
-Case.create(title: "Hinsley v Chief Constable of West Mercia Constabulary UK/EAT/0200/10/DM",
+Case.create!(title: "Hinsley v Chief Constable of West Mercia Constabulary UK/EAT/0200/10/DM",
 keyword_list: "Disability Discrimination – Reasonable adjustments – Reinstatement",
 summary: "C was a probationary police constable. She resigned and then, after the resignation had taken effect, asked to be
 reinstated on the ground that her decision to resign had been made too hastily and as a result of her depression.
@@ -588,7 +588,7 @@ open to the Chief Constable to reinstate the officer pursuant to his obligations
 
 
 
-Case.create(title: "Land Rover v Short UKEAT/0496/10/RN",
+Case.create!(title: "Land Rover v Short UKEAT/0496/10/RN",
 keyword_list: "Disability Discrimination – Reasonable Adjustments – Procedure - List of Issues",
 summary: "C worked on the production track for R. He was disabled and became unable to perform the core functions of
 his employment. R said that it was unable to identify an alternative position and dismissed C. C presented
@@ -626,7 +626,7 @@ objection to the particular issue being argued.")
 
 
 
-Case.create(title: "R (JM and MT) v Isle of White Council [2011] EWHC 2911",
+Case.create!(title: "R (JM and MT) v Isle of White Council [2011] EWHC 2911",
 keyword_list: " Disability Discrimination – Public Sector Equality Duty – Challenge to Restriction of Social Care due to budgetary constraints",
 summary: "Cs were two severely disabled adults receiving community care services from D. D decided to reduce its
 provision of community care. Cs sought judicial review and argued that D had acted unlawfully by (a) failing to
@@ -664,7 +664,7 @@ Community Care Act 1990.")
 
 
 
-Case.create(title: "F v Cleveland Police Authority UKEAT/0586/11/JOJ",
+Case.create!(title: "F v Cleveland Police Authority UKEAT/0586/11/JOJ",
 keyword_list: " Disability Discrimination — Fresh Evidence — Disability Discrimination Act 1995",
 summary: "C's disability discrimination claims were dismissed by the ET at a PHR. The ET had taken a view on C's credibility
 and in the absence of medical records did not accept that she had been prescribed anti-depressants over a seven
@@ -703,7 +703,7 @@ at para 4 of Schedule 1 DDA 1995.")
 
 
 
-Case.create(title: "Franks v Board of Governors of Churchmead School UKEATPA/0708/10/RN",
+Case.create!(title: "Franks v Board of Governors of Churchmead School UKEATPA/0708/10/RN",
 keyword_list: " Time Limits - Disability Preventing Compliance",
 summary: "C appealed from a decision of the Deputy Registrar of the EAT refusing permission to extend time to appeal an
 order (which was itself an order refusing to extend time for lodging an appeal).",
@@ -736,7 +736,7 @@ limit because of their disability, then time should be extended. It is light on 
 
 
 
-Case.create(title: "O’Cathail v Transport for London UKEAT/0247/11/MAA",
+Case.create!(title: "O’Cathail v Transport for London UKEAT/0247/11/MAA",
 keyword_list: " Disability Discrimination — Reasonable Adjustments — Where Disability Prevents Compliance with Time Limits",
 summary: "C's case was listed for a hearing. The Claimant fell ill with a respiratory infection and said that he was unable to
 attend. He made 2 applications for an adjournment. The ET held that the hearing should proceed in any event.
@@ -771,7 +771,7 @@ pursuing or defending their claim in these circumstances.")
 
 
 
-Case.create(title: "R (D & S) v Manchester City Council [2012] EWHC 17 (Admin)",
+Case.create!(title: "R (D & S) v Manchester City Council [2012] EWHC 17 (Admin)",
 keyword_list: " Disability Equality Duty — s 49A Disability Discrimination Act 1995 — Public Sector Equality Duty - s 149 Equality Act 2010",
 summary: "C5 were recipients of social care services from D. They sought to challenge D's budget-setting and consultation
 processes as it affected those services. Cs argued that D had failed to comply with their public sector equality
@@ -807,7 +807,7 @@ take.")
 
 
 
-Case.create(title: "R (Green) v Glos. County Council; R (Rowe and Hird) v Somerset County Council [2011] EWHC 2687 (Admin); [2011] EWHC 3215 (Admin)",
+Case.create!(title: "R (Green) v Glos. County Council; R (Rowe and Hird) v Somerset County Council [2011] EWHC 2687 (Admin); [2011] EWHC 3215 (Admin)",
 keyword_list: " Disability Equality Duty — s 49A Disability Discrimination Act 1995 — Public Sector Equality Duty - s 149 Equality Act 2010",
 summary: "Cs, who were residents of the D local authorities, sought judicial review of decisions to withdraw funding from
 their local public libraries on the grounds that Ds had failed to comply with their public sector equality duties.",
@@ -844,7 +844,7 @@ such as EIAs, before them.")
 
 
 
-Case.create(title: "R (Rajput and Shamji) v London Borough of Waltham Forest; R (Tiller) v East Sussex County Council [2011] EWCA Civ 1577",
+Case.create!(title: "R (Rajput and Shamji) v London Borough of Waltham Forest; R (Tiller) v East Sussex County Council [2011] EWCA Civ 1577",
 keyword_list: " Disability Equality Duty — s 49A Disability Discrimination Act 1995",
 summary: "",
 facts: "In the first appeal, both Cs were disabled and sought judicial review of a decision by D to close the Crownfield
@@ -885,7 +885,7 @@ pursue their claim quickly and expeditiously are unlikely to be successful.")
 
 
 
-Case.create(title: "Roberts v North West Ambulance Services UKEAT/0085/11/RN",
+Case.create!(title: "Roberts v North West Ambulance Services UKEAT/0085/11/RN",
 keyword_list: " Disability Discrimination — Reasonable Adjustments — Meaning of Provision Criterion or Practice — Calculation of Pension Losses",
 summary: "C suffered from a social anxiety disorder. He resigned and alleged that the Respondent had failed to make
 reasonable adjustments for him under the DDA 1995. His claims of unfair constructive dismissal and disability
@@ -920,7 +920,7 @@ about how the PCP is described?")
 
 
 
-Case.create(title: "Conway v Community Options Ltd UKEAT/0417/11",
+Case.create!(title: "Conway v Community Options Ltd UKEAT/0417/11",
 keyword_list: " Reasonable Adjustments - Strike Out - Evidence of Return to Work",
 summary: "C brought proceedings for unfair dismissal and disability discrimination. The ET struck out the claims on the
 grounds that they had no reasonable prospect of success pursuant to rule 18(2)(d) of the ET rules of procedure.
@@ -952,7 +952,7 @@ In any event, where the medical prognosis for an employee is uncertain or unfavo
 the Respondent should at least consider an application to strike out those claims.")
 
 
-Case.create(title: "GCHQ v Bacchus UKEAT/0373/12/LA",
+Case.create!(title: "GCHQ v Bacchus UKEAT/0373/12/LA",
 keyword_list: " Medical Evidence — Co-operation with Medical Expert — Unless Order - Striking Out",
 summary: "",
 facts: "C brought proceedings for disability discrimination. C claimed that his disability was anxiety and
@@ -993,7 +993,7 @@ A very helpful case dealing with the unco-operative claimant, which was not refe
 Hanlon v Kirklees Metropolitan Council & Ors [2004] All ER D 154, EAT.")
 
 
-Case.create(title: "O’Cathail v Transport for London [2012] EWCA Civ 1004",
+Case.create!(title: "O’Cathail v Transport for London [2012] EWCA Civ 1004",
 
 keyword_list: "Appeal - Extension of Time — Article 13 — Reasonable Adjustments",
 facts: "C suffers from depression, anxiety and panic attacks exacerbated by court hearings. C brought claims for
@@ -1031,7 +1031,7 @@ ensure that they lodge a properly constituted appeal within the requisite time l
 
 
 
-Case.create(title: "Burnip v (1) Birmingham City Council (2) Secretary of State for Work & Pensions [2012] EWCA Civ 629",
+Case.create!(title: "Burnip v (1) Birmingham City Council (2) Secretary of State for Work & Pensions [2012] EWCA Civ 629",
 keyword_list: " Article 14 — Housing Benefit — Social Security — Indirect Discrimination - Justification",
 summary: "",
 facts: "Under the Housing Benefit Regulations 2006 (“Regulations”), private sector housing benefit (“HB”) is paid
@@ -1072,7 +1072,7 @@ relied upon even in claims based upon the ECHR . As a point of interest, the Cou
 the argument that statistical evidence was necessary in an Article 14 case.")
 
 
-Case.create(title: "Croad v University and College Union UKEAT/0012/11/CEA",
+Case.create!(title: "Croad v University and College Union UKEAT/0012/11/CEA",
 keyword_list: " Burden of Proof — Victimisation — Withdrawal of Legal Representation",
 summary: "",
 facts: "C suffered from dyslexia, depression and anxiety. In January 2006 she was signed off sick from work with
@@ -1113,7 +1113,7 @@ should be able to rely on the reverse burden of proof in bringing a victimisatio
 
 
 
-Case.create(title: "Newcastle upon Tyne Hospitals NHS Foundation Trust v Bagley UKEAT/0417/11",
+Case.create!(title: "Newcastle upon Tyne Hospitals NHS Foundation Trust v Bagley UKEAT/0417/11",
 keyword_list: " Reasonable Adjustments - Comparator — Indirect Discrimination",
 summary: "C went off sick from work and was eventually dismissed for incapacity. C claimed that R had failed to make
 reasonable adjustments by altering its requirement for her to accept a permanent reduction to her hours before
@@ -1150,7 +1150,7 @@ prohibits a statistical analysis where a policy is applied across the board to d
 is the disadvantage (if any) identified in these circumstances?")
 
 
-Case.create(title: "Olenloa v North West London Hospitals NHS Trust UKEAT/0599/11/ZT",
+Case.create!(title: "Olenloa v North West London Hospitals NHS Trust UKEAT/0599/11/ZT",
 keyword_list: " Reasonable adjustments - Extension of Time",
 summary: "",
 facts: " 
@@ -1187,7 +1187,7 @@ distinctive events, any decisions on limitation are best taken along with all th
 hearing.")
 
 
-Case.create(title: "Prospects for People with Learning Difficulties v Harris UKEAT/0612/ 11",
+Case.create!(title: "Prospects for People with Learning Difficulties v Harris UKEAT/0612/ 11",
 keyword_list: " Suspension - Harassment - Health and Safety Obligations and Discrimination",
 summary: "C claimed that her suspension from work constituted victimisation, harassment and unfair dismissal. The ET
 dismissed the victimisation claim but upheld the claim that she had been unfairly dismissed and subjected to
@@ -1211,7 +1211,7 @@ C's position meant that the suspension was effectively unwarranted and unjustifi
 a intimidating, hostile, degrading, humiliating or offensive environment for C. The ET was also entitled to find
 that with foresight and preparation the suspension could have been avoided. The EAT also held that ’’It is not,
 and cannot possibly be, the law that an employer is required peremptorily to suspend an employee, disabled or
-not disabled, simply because a risk assessment shows that some part of the work creates a moderate risk for
+not disabled, simply because a risk assessment shows that some part of the work create!s a moderate risk for
 them.”",
 comment: "This is an unusual case, perhaps in the result, more than the facts. The delicate line between satisfying one’s
 health and safety obligations and complying with the equalities legislation is sometimes tricky to identify. This
@@ -1221,7 +1221,7 @@ implement the results in a knee jerk fashion.")
 
 
 
-Case.create(title: "R (Greenwich Community Law Centre) v Greenwich Borough Council [2012] EWCA Civ",
+Case.create!(title: "R (Greenwich Community Law Centre) v Greenwich Borough Council [2012] EWCA Civ",
 keyword_list: " Public Sector Equality Duties — s 149 Equality Act 2010",
 summary: "",
 facts: "A provided legal advice and assistance to vulnerable residents in Greenwich in the areas of immigration,
@@ -1264,7 +1264,7 @@ difficult to see how, in those circumstances, A could have been successful in th
 
 
 
-Case.create(title: "R (Hurley) v Secretary of State for Business Innovation and Skills [2012] EWHC 201",
+Case.create!(title: "R (Hurley) v Secretary of State for Business Innovation and Skills [2012] EWHC 201",
 keyword_list: " Education - Public Sector Equality Duty - Race and Disability",
 summary: "Cs were students who aspired to study at university. They sought to challenge by way of JR D's decision to
 increase the maximum amount which universities were permitted to charge students to £9,000. They
@@ -1297,7 +1297,7 @@ taken as a whole, meant that the effect ofthe measure in question was mitigated 
 
 
 
-Case.create(title: "R (Williams & Ors) v Surrey County Council [2012] EWHC 867 (QB)",
+Case.create!(title: "R (Williams & Ors) v Surrey County Council [2012] EWHC 867 (QB)",
 keyword_list: " Public Sector Equality Duty — s 149 Equality Act 2010 — Wednesbury unreasonableness",
 summary: "Cs claimed that D's decision to restructure its library services was taken without due regard to the public
 sector equality duty (“PSED”). The Administrative Court ruled that D's decision was unlawful and they had
@@ -1336,7 +1336,7 @@ required and monitored” (para 127) as falling substantially far short of demon
 duty. This should provide guidance to public authorities that they should fully consider the equality issues
 inherent in any proposal and make sure decisions are taken on up-to-date information.")
 
-Case.create(title: "ZH v Commissioner of Police for the Metropolis [2012] EqLR 425",
+Case.create!(title: "ZH v Commissioner of Police for the Metropolis [2012] EqLR 425",
 keyword_list: " Disability — Discrimination in the provision of Services — Reasonable Adjustments",
 summary: "C is severely autistic and epileptic. He cannot communicate by speech and suffers from learning disabilities. He
 claimed damages for assault, battery, false imprisonment and unlawful disability discrimination. D denied the
@@ -1402,7 +1402,7 @@ impairments.")
 
 
 
-Case.create(title: "Aderemi v London and South East Railways UKEAT/0316/12/KN",
+Case.create!(title: "Aderemi v London and South East Railways UKEAT/0316/12/KN",
 keyword_list: " Disability — Normal Day to Day Activity - Work Activities",
 summary: "C had difficulty standing on his feet for long periods. He brought claims of disability discrimination after he was
 dismissed for incapacity. The ET held that he was not disabled because his condition did not have a substantial,
@@ -1439,7 +1439,7 @@ different conclusion to the one it might otherwise have reached.")
 
 
 
-Case.create(title: "Ali v London Borough of Newham [2012] EWHC 2970",
+Case.create!(title: "Ali v London Borough of Newham [2012] EWHC 2970",
 keyword_list: " Equality Duty - Effect of Non-Statutory Guidance - Due Regard to Individual Disabled",
 summary: "C had a visual impairment. He challenged the guidance that D had devised to be used in the design and
 specification of tactile paving in its Borough. The challenge was based in part on D's decision to depart from
@@ -1476,7 +1476,7 @@ from the guidance in the first place and, in particular, why the guidance was no
 
 
 
-Case.create(title: "Carphone Warehouse Ltd v Martin UKEAT/0371/12/JOJ, UKEAT/0372/JOJ",
+Case.create!(title: "Carphone Warehouse Ltd v Martin UKEAT/0371/12/JOJ, UKEAT/0372/JOJ",
 keyword_list: " Provision, criterion or practice — Taking of steps - s.4A Disability Discrimination Act 1995",
 summary: "R (Carphone Warehouse) failed to pay C the correct pay and conducted a flawed disciplinary process. C
 complained that R's mistakes were failures to make reasonable adjustments. The ET upheld his claim and R
@@ -1494,7 +1494,7 @@ relation to a particular transaction, in this case preparing C's pay slip in Jul
 characterised as a ”provision, criterion or practice applied” for the purposes of the duty to make reasonable
 adjustments.
 
-Furthermore the obligation created by the duty to make adjustments is an obligation to take such steps as are
+Furthermore the obligation create!d by the duty to make adjustments is an obligation to take such steps as are
 reasonable. ”Taking care” when doing something could not be regarded as the taking of a step. Similarly,
 avoiding delay could not be characterised as taking a step either. C however succeeded in his constructive
 dismissal claim.",
@@ -1511,7 +1511,7 @@ suffering more anxiety than a non-disabled person) by an disciplinary process wh
 reasonable adjustment to complete the procedure in as short a time as reasonably possible?")
 
 
-Case.create(title: "Parents of C v Trustees of Stanbridge Earls School SE881/12/00047",
+Case.create!(title: "Parents of C v Trustees of Stanbridge Earls School SE881/12/00047",
 keyword_list: " Discrimination in Education— Discrimination Arising from Disability — Direct Discrimination",
 summary: "C was a pupil at D's school. She had engaged in appropriate sexual conduct with two boys. She was excluded
 from the school. The boys were not. C brought claims of direct disability discrimination and discrimination
@@ -1549,7 +1549,7 @@ Judge held that the reason C was excluded was because she could not be protected
 arose in consequence of her disability and the exclusion was not justified as a proportionate response.")
 
 
-Case.create(title: "Cyprien v Bradford Grammar School UKEAT/0306/12/DM",
+Case.create!(title: "Cyprien v Bradford Grammar School UKEAT/0306/12/DM",
 keyword_list: " Disability — Time Limits in Reasonable Adjustments Cases - Matuszowicz",
 summary: "C claimed that R had failed to make two reasonable adjustments. The ET held that R had discriminated against C
 but that C had not brought his claims in time and refused permission to extend time. C appealed.",
@@ -1587,7 +1587,7 @@ refusal to extend time was based on a perversity argument which failed.")
 
 
 
-Case.create(title: "Espie v Balfour Beatty Engineering Services UKEAT/0321/12/DM",
+Case.create!(title: "Espie v Balfour Beatty Engineering Services UKEAT/0321/12/DM",
 keyword_list: " Discrimination in Consequence of Disability — Overlapping Illnesses",
 summary: "C claimed that he was unfairly dismissed and discriminated against. The ET held that C was not discriminated
 against but had been unfairly dismissed on a procedural basis. The ET awarded him compensation of £1,100. C
@@ -1625,7 +1625,7 @@ because C would not have been able to work anyway because of his depression.")
 
 
 
-Case.create(title: "Foster v Cardiff University UKEAT/0422/ 12/ LA",
+Case.create!(title: "Foster v Cardiff University UKEAT/0422/ 12/ LA",
 keyword_list: " Disability Discrimination — Reasonable Adjustments",
 summary: "C was an academic at R's University. C suffered from Chronic Fatigue Syndrome (CFS). C claimed that R had
 failed to make reasonable adjustments to its teaching requirements in 2010-2011. The ET rejected her claim and
@@ -1658,7 +1658,7 @@ to be seen how long it will be before the question of the comparator is referred
 Appeal.")
 
 
-Case.create(title: "Gallop v Newport City Council UKEAT/0586/10/DM",
+Case.create!(title: "Gallop v Newport City Council UKEAT/0586/10/DM",
 keyword_list: " Reasonable Adjustments - Knowledge of Disability",
 summary: "R's Occupational Health department (OH) had consistently maintained that despite C's medical condition
 (stress) he was not disabled. The ET found that R did not have actual or constructive knowledge of C's
@@ -1697,7 +1697,7 @@ to about that a person is being affected by cancer or merely that they have it? 
 outcome with anticipation.")
 
 
-Case.create(title: "Hosegood v Khalid (t/a Salt & Pepper Village) Case lSC0052",
+Case.create!(title: "Hosegood v Khalid (t/a Salt & Pepper Village) Case lSC0052",
 keyword_list: " Disability Discrimination in the Provision of Services — Aggravated Damages",
 summary: "This is a case in the Scunthorpe County Court. It is a simple case about the provision of an access ramp to a
 restaurant.",
@@ -1736,7 +1736,7 @@ damages are rare but were clearly justified in this case.")
 
 
 
-Case.create(title: "Jennings v Barts and the London NHS Trust UKEAT/0056/12/DM",
+Case.create!(title: "Jennings v Barts and the London NHS Trust UKEAT/0056/12/DM",
 
 keyword_list: "Reasonable Adjustments — Knowledge of Disability",
 
@@ -1779,7 +1779,7 @@ heard in the Court of Appeal. We will report the decision when it is handed down
 
 
 
-Case.create(title: "Ladd v London Borough of Bromley [2012] EWCA Civ 1586",
+Case.create!(title: "Ladd v London Borough of Bromley [2012] EWCA Civ 1586",
 
 keyword_list: "Public Authorities — Direct Discrimination — Assessment of Disability",
 
@@ -1820,7 +1820,7 @@ D were prepared to carry out and assessment in C’s home.")
 
 
 
-Case.create(title: "Nottingham City Transport Ltd v Harvey UKEAT/0032/12/JOJ",
+Case.create!(title: "Nottingham City Transport Ltd v Harvey UKEAT/0032/12/JOJ",
 
 keyword_list: "Reasonable Adjustments — Meaning of Provision, Criterion or Practice",
 
@@ -1859,7 +1859,7 @@ element of mens rea or deliberation into the imposition of PCP?")
 
 
 
-Case.create(title: "O’Cathail v Transport for London [2013] EWCA Civ 21",
+Case.create!(title: "O’Cathail v Transport for London [2013] EWCA Civ 21",
 keyword_list: " Disability Discrimination - Article 6 Rights",
 summary: "The latest appeal in the O’Cathail saga deals with the adjournment of C's substantive hearing on grounds
 of medical unfitness. C's applications for postponements of his substantive ET hearing had been refused.
@@ -1895,7 +1895,7 @@ where the tribunal is granted wide case management powers.")
 
 
 
-Case.create(title: "Parents of C v Trustees of Stanbridge Earls School SE881/12/00047",
+Case.create!(title: "Parents of C v Trustees of Stanbridge Earls School SE881/12/00047",
 keyword_list: " Discrimination in Education— Discrimination Arising from Disability — Direct Discrimination",
 summary: "C was a pupil at D's school. She had engaged in inappropriate sexual conduct with two boys. She was excluded
 from the school. The boys were not. C brought claims of direct disability discrimination and discrimination
@@ -1934,7 +1934,7 @@ Judge held that the reason C was excluded was because she could not be protected
 arose in consequence of her disability and the exclusion was not justified as a proportionate response.")
 
 
-Case.create(title: "Patel v Lloyds Pharmacy Ltd UKEAT/0418/12/ZT",
+Case.create!(title: "Patel v Lloyds Pharmacy Ltd UKEAT/0418/12/ZT",
 keyword_list: " Direct disability discrimination — Striking-out/dismissal — Discrimination in Recruitment",
 summary: "C's discrimination claim was struck out for having no reasonable prospect of success. C appealed.",
 facts: "C had disclosed in an interview with Mr Butt, an employee of R, that he had bipolar disorder. Following the
@@ -1964,7 +1964,7 @@ should be struck out.")
 
 
 
-Case.create(title: "R (Coleman) v Barnet London Borough Council [2012] EWHC 3725 (Admin)",
+Case.create!(title: "R (Coleman) v Barnet London Borough Council [2012] EWHC 3725 (Admin)",
 keyword_list: " 5.149 Equality Act 2010 - Duty to Have ‘Due Regard’ — Due Regard to Effect on Individuals",
 summary: "D gave planning permission for the construction of a school upon land that had been used for a garden
 centre. The garden centre was an important local amenity for local people with disabilities and the elderly.
@@ -1998,7 +1998,7 @@ disabled person who is affected.")
 
 
 
-Case.create(title: "R (South West Care Homes Ltd) v Devon County Council [2012] EWHC 2967",
+Case.create!(title: "R (South West Care Homes Ltd) v Devon County Council [2012] EWHC 2967",
 
 keyword_list: "Equality Act 2010, s 149 — Due Regard - Closure of Services",
 
@@ -2040,7 +2040,7 @@ management of such closures when D set its fees.")
 
 
 
-Case.create(title: "Walker v Sita Information Network Computing UKEAT/0097/12/KN",
+Case.create!(title: "Walker v Sita Information Network Computing UKEAT/0097/12/KN",
 keyword_list: " Meaning of Disability — Effect of Impairment — Cause of Impairment",
 summary: "C suffered from functional overlay compounded by obesity. C suffered from asthma, dyslexia, chronic
 fatigue syndrome, and a number of other significant health problems. Because medical experts could not
@@ -2071,7 +2071,7 @@ approach in cases where the cause of the impairment is unclear.")
 
 
 
-Case.create(title: "Ward v Allies and Morrison Architects [2012] EWCA Civ 1287",
+Case.create!(title: "Ward v Allies and Morrison Architects [2012] EWCA Civ 1287",
 keyword_list: " Use of Definition of Disability in Personal Injuries Claims",
 summary: "C won a personal injury claim against her employer after an accident at work. The Judge award her
 compensation on the basis that she was not disabled. C appealed.",
@@ -2107,7 +2107,7 @@ of interest.")
 
 
 
-Case.create(title: "ZH v Commissioner of Police for the Metropolis [2013] EWCA Civ 69",
+Case.create!(title: "ZH v Commissioner of Police for the Metropolis [2013] EWCA Civ 69",
 keyword_list: " Disability — Discrimination in the provision of Services — Reasonable Adjustments",
 summary: "C was severely autistic and epileptic. He claimed damages arising out of discriminatory treatment by police
 officers. A County Court Judge upheld his claim. The Police (D) appealed to the Court of Appeal.",
@@ -2146,7 +2146,7 @@ the circumstances of this individual case, it was reasonable for D to adjust its
 Arguments were also made under the ECHR but are not dealt with here.")
 
 
-Case.create(title: "Ahmed v Bedford Borough Council UKEAT/0064/13/SM",
+Case.create!(title: "Ahmed v Bedford Borough Council UKEAT/0064/13/SM",
 keyword_list: "Rule 18 (7) (c) of the ET Rules of Procedure — failure to comply with order - strike out of claims",
 summary: "C issued a claim for, amongst other things, race, religious and disability discrimination. The ET Judge gave
 directions for the joint instruction of a medical expert. C failed to attend his appointment with the expert.
@@ -2185,7 +2185,7 @@ be heard on their merit.")
 
 
 
-Case.create(title: "Dosanj v Nottinghamshire Healthcare NHS Trust UKEAT/0517/12/GE",
+Case.create!(title: "Dosanj v Nottinghamshire Healthcare NHS Trust UKEAT/0517/12/GE",
 keyword_list: " Application to Amend — Direct Disability Discrimination — Case Preparation",
 summary: "C was dismissed from her employment as a Clinical Psychologist for R on 19 August 2010 and brought
 claims for unfair and wrongful dismissal. She later applied to amend her claim to include race and
@@ -2225,7 +2225,7 @@ oral argument and documents” (as it had been initially before the ET).")
 
 
 
-Case.create(title: "Dozie v Addison Lee PLC UKEAT/0328/13/BA and various",
+Case.create!(title: "Dozie v Addison Lee PLC UKEAT/0328/13/BA and various",
 keyword_list: " Discrimination cases — adjournments — strike out claims",
 summary: "The matter related to various appeals made by Miss Dozie, the Claimant (“C”) in respect of various orders
 made by the Employment Tribunal to strike out a number of her claims for various reasons. R put forward
@@ -2264,7 +2264,7 @@ instead have regard for the EAT Practice Directions when deciding whether a hear
 (Paragraphs 10 and 20 of the Judgment and 18.3 of the EAT Practice Directions).")
 
 
-Case.create(title: "Fox v British Airways PLC [2013] EWCA Civ 972",
+Case.create!(title: "Fox v British Airways PLC [2013] EWCA Civ 972",
 keyword_list: " Claims by an Estate — Discriminatory dismissal — Remedy — Quanutm — Loss of Life Insurance",
 summary: "Mr Fox was dismissed from British Airways after ill health. He died shortly thereafter. The father of Mr
 Fox, issued a claim in the ET for Disability Discrimination and Unfair Dismissal. The intention behind the
@@ -2304,7 +2304,7 @@ award of damages was therefore made in that sum.")
 
 
 
-Case.create(title: "Newham Sixth Form College v Sanders UKEAT/0610/12/SM",
+Case.create!(title: "Newham Sixth Form College v Sanders UKEAT/0610/12/SM",
 keyword_list: "Failure to make reasonable adjustments — Steps in Environment Agency v Rowan",
 summary: "C, who suffered from a depressive illness, brought claims for disability-related discrimination and failure to
 make reasonable adjustments under the Disability Discrimination Act 1995. The ET dismissed C's
@@ -2341,7 +2341,7 @@ discrimination appeals that cite both Tarbuck and Rowan.")
 
 
 
-Case.create(title: "Redcar and Cleveland Primary Care Trust v Lonsdale UKEAT/0090/12/RN",
+Case.create!(title: "Redcar and Cleveland Primary Care Trust v Lonsdale UKEAT/0090/12/RN",
 keyword_list: " Direct Discrimination — Failure to make Reasonable Adjustments - Redundancy",
 summary: "C was registered blind. She was made redundant from her role following a managed process whereby she
 had been precluded from applying for a post at Band 6 in competition with another candidate during
@@ -2381,7 +2381,7 @@ of success was something that could be considered further at the quantum stage."
 
 
 
-Case.create(title: "Riley v The Crown Prosecution Service [2013] EWCA Civ 951",
+Case.create!(title: "Riley v The Crown Prosecution Service [2013] EWCA Civ 951",
 keyword_list: "Ill-Health — postponements - strike out of claims",
 facts: "C was a solicitor in the CPS. She raised grievances for bullying and harassment. In August 2008, Ms Riley
 went off sick. She was still off sick by May 2011. The Occupational Health report advised that C would not
@@ -2428,7 +2428,7 @@ overriding consideration for postponing or striking out will be whether a fair t
 reasonable period of time (Article 6 of the ECHR).")
 
 
-Case.create(title: "Sud v London Borough of Ealing [2013] EWCA Civ 949",
+Case.create!(title: "Sud v London Borough of Ealing [2013] EWCA Civ 949",
 keyword_list: "Defining disability — errors in law — costs awards",
 summary: "C was dismissed by reason of redundancy. She made unfair dismissal, discrimination claims and a whistle-
 blowing claim. The ET held that C was physically disabled but did not have a disabling mental impairment.
