@@ -18,6 +18,7 @@ group :production do
   gem 'newrelic_rpm'
 end
 
+gem 'rufus-scheduler'
 gem 'omniauth'
 gem "omniauth-google-oauth2"
 gem 'acts-as-taggable-on'
