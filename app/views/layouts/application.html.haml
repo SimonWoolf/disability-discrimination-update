@@ -9,8 +9,8 @@
     = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "application"
     /[if (lt IE 9) & (!IEMobile)]
-      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"
-      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
+      = stylesheet_link_tag "ie8.css?body=1"
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"
     = csrf_meta_tags
   %body
     %header
@@ -19,3 +19,5 @@
       %main{:role => "main"}
         = render 'layouts/messages'
         = yield
+    /[if (lt IE 9) & (!IEMobile)]
+      = javascript_include_tag "respond.min.js"
