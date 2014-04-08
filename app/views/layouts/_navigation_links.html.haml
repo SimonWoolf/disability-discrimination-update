@@ -1,7 +1,7 @@
 %li= link_to 'About', about_path
 %li= link_to 'Contact', contact_path
 %li.has-dropdown 
-  %a{href: "#"} 'Cases'
+  = link_to 'Cases', cases_path
   %ul.dropdown
     %li= link_to 'by name', cases_path
     %li= link_to 'by keyword', by_keyword_cases_path
