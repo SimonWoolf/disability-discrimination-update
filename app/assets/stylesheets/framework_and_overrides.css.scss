@@ -12,8 +12,8 @@ $topbar-height: 60px;
 
 // light topbar
 $topbar-link-font-family: $sans-fonts;
-$topbar-bg: rgb(229, 229, 229);
-$topbar-dropdown-bg: rgb(229, 229, 229);
+$topbar-bg: $nav-color;
+$topbar-dropdown-bg: $nav-color;
 $topbar-dropdown-link-color: #000;
 $topbar-dropdown-link-bg: #BBB;
 $topbar-dropdown-toggle-color: #000;

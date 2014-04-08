@@ -10,14 +10,19 @@
     = javascript_include_tag "application"
     /[if (lt IE 9) & (!IEMobile)]
       = stylesheet_link_tag "ie8.css?body=1"
+      -# need html5shiv to make eg google webfonts work in IE8
       = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"
     = csrf_meta_tags
   %body
-    %header
-      = render 'layouts/navigation'
-    .row
-      %main{:role => "main"}
-        = render 'layouts/messages'
-        = yield
+    #wrap
+      %header
+        = render 'layouts/navigation'
+      .row#main-container
+        %main{:role => "main"}
+          = render 'layouts/messages'
+          = yield
+    #footer
+      = render 'layouts/footer'
     /[if (lt IE 9) & (!IEMobile)]
+      -# combination of this and the setting the grid width manually in ie8.css makes the grid work
       = javascript_include_tag "respond.min.js"

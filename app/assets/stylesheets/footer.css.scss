@@ -1,0 +1,26 @@
+@import "globals_and_mixins";
+
+$footer-height: 60px;
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main-container {
+  overflow:auto;
+	padding-bottom: $footer-height;
+}
+
+#footer {
+  position: relative;
+	margin-top: -$footer-height;
+	height: $footer-height;
+	clear:both;
+  background-color: $nav-color;
+} 
+
+#webdesign {
+  font-family: $sans-fonts;
+  padding: 0.9rem 0;
+  font-size: 0.8rem;
+}
