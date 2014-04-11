@@ -3,7 +3,8 @@
 %nav.top-bar{"data-topbar" => true}
   %ul.title-area
     %li.name
-      = link_to 'Disability Discrimination Update', root_path, id: 'title'
+      = link_to 'Disability Discrimination Update', root_path, id: 'title', class: 'hide-for-small-only'
+      = link_to 'Disability Update', root_path, id: 'title', class: 'show-for-small-only'
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
         Menu

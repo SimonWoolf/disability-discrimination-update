@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "foundation/functions";
+@import "globals_and_mixins";
 
 .portrait {
   padding: rem-calc(5px);
@@ -26,4 +27,10 @@
 
 #byline {
   margin-bottom: 1rem;
+}
+
+.caseslink {
+  font-family: $sans-fonts;
+  font-size: 1rem;
+  background-color: #446
 }
