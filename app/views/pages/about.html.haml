@@ -6,7 +6,9 @@
 
 .row
   .small-6.medium-4.medium-offset-1.columns
-    = link_to "Cases by name", cases_path, class: 'expand radius round button caseslink'
+    = link_to "Cases by name", cases_path, class: 'expand radius round button caseslink hide-for-small-only'
+    = link_to "By name", cases_path, class: 'expand radius round button caseslink show-for-small-only'
   .small-6.medium-4.medium-offset-1.columns.end
-    = link_to "Cases by keyword", by_keyword_cases_path, class: 'expand radius round button caseslink'
+    = link_to "Cases by keyword", by_keyword_cases_path, class: 'expand radius round button caseslink hide-for-small-only'
+    = link_to "By keyword", by_keyword_cases_path, class: 'expand radius round button caseslink show-for-small-only'
 
