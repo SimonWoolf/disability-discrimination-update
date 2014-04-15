@@ -6,6 +6,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'poltergeist'
   gem 'pry-rails'
   gem 'bond'
   gem 'better_errors'
@@ -19,8 +20,6 @@ group :production do
 end
 
 gem 'rufus-scheduler'
-gem 'omniauth'
-gem "omniauth-google-oauth2"
 gem 'acts-as-taggable-on'
 
 gem 'thin'
