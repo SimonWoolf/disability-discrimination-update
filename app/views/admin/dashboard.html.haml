@@ -6,7 +6,7 @@
   %tbody
     - cases_by_initial = @cases.group_by { |c| c.title[0] }
     - cases_by_initial.each_key.sort.each do |initial|
-      %tr
+      %tr.initialrow
         %td
           %h3= initial
       = render partial: 'case', collection: cases_by_initial[initial].sort_by(&:title), as: '_case'
