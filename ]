@@ -1,0 +1,5 @@
+$('#namefilter').keyup ->
+  $('.caserow').show()
+  $('.caserow').filter ->
+    $('.casename').indexOf $('#namefilter').val()
+
