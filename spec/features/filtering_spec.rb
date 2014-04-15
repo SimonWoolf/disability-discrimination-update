@@ -5,7 +5,7 @@ describe 'filtering', js: true do
     Case.create!(title: "goodtitle")
     Case.create!(title: "badtitle")
     visit '/cases'
-    fill_in 'namefilter', with: 'good'
+    fill_in 'namefilter', with: 'good '
     expect(page).to have_content(:visible, 'goodtitle')
     expect(page).not_to have_content(:visible, 'badtitle')
   end
