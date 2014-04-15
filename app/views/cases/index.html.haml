@@ -1,6 +1,6 @@
 %h1 Cases by name
 
-%input{type:"text", placeholder: "Type to filter by case name", id:"namefilter"}
+%input{type:"text", placeholder: "Filter by case name", id:"namefilter"}
 %table{width: '100%'}
   %tbody
     - cases_by_initial = @cases.group_by { |c| c.title[0] }
