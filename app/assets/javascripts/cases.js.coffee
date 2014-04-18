@@ -2,8 +2,8 @@ $(document).ready ->
   $('#namefilter').keyup ->
     $('.caserow').show()
     filter = $('#namefilter').val()
-                             .trim()
                              .toLowerCase()
+    filter = $.trim(filter) # aargh. IE8 breaks on chained .trim() for some reason
     # hide "A", "B" etc headings only when filtering
     if filter
       $('.initialrow').hide()
@@ -19,8 +19,8 @@ $(document).ready ->
   $('#kwfilter').keyup ->
     $('.keywordrow').show()
     filter = $('#kwfilter').val()
-                           .trim()
                            .toLowerCase()
+    filter = $.trim(filter) # IE8 breaks on chained .trim()
     $('.keywordrow').filter ->
       $('.keyword', this).html()
                          .toLowerCase()
