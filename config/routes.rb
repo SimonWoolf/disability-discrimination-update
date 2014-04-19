@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts
+
 root 'pages#about'
 
 resources :cases do
