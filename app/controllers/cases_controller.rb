@@ -1,5 +1,5 @@
 class CasesController < ApplicationController
-  http_basic_authenticate_with CREDENTIALS.merge(only: [:create, :update, :delete])
+  http_basic_authenticate_with CREDENTIALS.merge(only: [:create, :update, :destroy])
 
   before_action :retrieve_case, only: [:show, :edit, :update, :destroy]
   
