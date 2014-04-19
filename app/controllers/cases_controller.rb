@@ -19,7 +19,7 @@ class CasesController < ApplicationController
   def create
     @case = Case.new(params[:case].permit(CASE_FIELDS))
     if @case.save
-      redirect_to action: :index
+      redirect_to @case, notice: 'Case successfully created.'
     else
       flash.now[:error] = 'Error: failed to save case'
       render :new
@@ -38,11 +38,11 @@ class CasesController < ApplicationController
 
   def update
     if @case.update(params[:case].permit(CASE_FIELDS))
-      flash[:notice] = "Saved"
+      redirect_to @post, notice: 'Case successfully updated.'
     else
       flash[:error] = "Error: failed to save"
+      render :edit
     end
-    redirect_to admin_path
   end
 
   def destroy
