@@ -8,7 +8,7 @@ html, body {height: 100%;}
 
 #main-container {
   overflow:auto;
-	padding-bottom: $footer-height;
+	padding-bottom: $footer-height + 20px;
 }
 
 #footer {
