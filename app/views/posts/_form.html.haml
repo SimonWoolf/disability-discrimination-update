@@ -9,3 +9,56 @@
   = f.text_field :title
   = f.text_area :body, rows: 15
   = f.submit 'Submit'
+
+%p
+  You can use 
+  = link_to "markdown", "https://daringfireball.net/projects/markdown/basics"
+  to format posts:
+
+%table{width: '60%'}
+  %tbody
+    %tr
+      %th{width: '50%', align: 'left'}
+        Do this:
+      %th{width: '50%', align: 'left'}
+        to get this:
+    %tr
+      %td
+        *Italics*
+      %td
+        %i italics
+    %tr
+      %td
+        **Bold**
+      %td
+        %b Bold
+    %tr
+      %td
+        [Google](http://google.co.uk)
+      %td
+        = link_to "Google", "http://google.co.uk"
+    %tr
+      %td
+        &gt; Blockquote
+      %td
+        %blockquote Blockquote
+    %tr
+      %td
+        \## Subheader
+      %td
+        %h2 Subheader
+    %tr
+      %td
+        \### Subsubheader
+      %td
+        %h3 Subsubheader
+    %tr
+      %td
+        \- Bulleted list
+      %td
+        %ul
+          %li Bulleted list
+    %tr
+      %td
+        Leave a blank line to get a line break.
+
