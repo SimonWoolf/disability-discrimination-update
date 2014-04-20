@@ -8,7 +8,10 @@ resources :cases do
   end
 end
 
-get 'admin' => 'admin#dashboard'
+
+get 'admin' => 'admin#case_dashboard'
+get 'admin/blog' => 'admin#blog_dashboard'
+
 get 'about' => 'pages#about'
 get 'contact' => 'pages#contact'
 

@@ -1,7 +1,11 @@
 class AdminController < ApplicationController
   http_basic_authenticate_with CREDENTIALS
 
-  def dashboard
+  def case_dashboard
     @cases = Case.all
+  end
+
+  def blog_dashboard
+    @posts = Post.order(created_at: :desc)
   end
 end

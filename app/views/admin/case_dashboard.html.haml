@@ -1,4 +1,6 @@
-%h1 Admin dashboard
+%h1 
+  Case dashboard
+  %small= link_to "Go to blog dashboard", admin_blog_path
 
 = link_to 'Add a new case', new_case_path, class: 'button success', id: 'newcasebutton'
 
@@ -9,4 +11,4 @@
       %tr.initialrow
         %td
           %h3= initial
-      = render partial: 'case', collection: cases_by_initial[initial].sort_by(&:title), as: '_case'
+      = render partial: 'admin/case', collection: cases_by_initial[initial].sort_by(&:title), as: '_case'
