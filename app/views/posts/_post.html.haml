@@ -1,6 +1,7 @@
-%h1
-  = link_to post.title, post_path(post)
-  %small= post.created_at.to_s(format = :long)
-%p= post.body_html
+.blogpost
+  %h1
+    = link_to post.title, post_path(post)
+    %small= post.created_at.to_s(format = :long)
+  = post.body_html
 
 %hr
