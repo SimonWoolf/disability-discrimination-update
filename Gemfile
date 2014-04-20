@@ -23,6 +23,9 @@ end
 gem 'rufus-scheduler'
 gem 'acts-as-taggable-on'
 
+# markdown for blog posts
+gem 'redcarpet'
+
 gem 'thin'
 gem 'haml-rails'
 gem 'foundation-rails'
