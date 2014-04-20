@@ -12,7 +12,7 @@ describe 'Admin actions' do
       fill_in 'case_facts', with: 'test facts'
       fill_in 'case_held', with: 'test held'
       fill_in 'case_comment', with: 'test comment'
-      click_button 'Add case'
+      click_button 'Submit'
 
       visit '/cases'
       click_link 'test title'
