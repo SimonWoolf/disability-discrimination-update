@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   http_basic_authenticate_with CREDENTIALS.merge(only: [:create, :update, :destroy])
 
   def index
-    @posts = Post.all
+    @posts = Post.order(created_at: :desc)
   end
 
   def show
