@@ -6,11 +6,6 @@
         - @post.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
-    = f.label :title
-    = f.text_area :title
-  .field
-    = f.label :body
-    = f.text_area :body
-  .actions
-    = f.submit 'Save'
+  = f.text_field :title
+  = f.text_area :body
+  = f.submit 'Add post'
