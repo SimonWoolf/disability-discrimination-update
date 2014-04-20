@@ -38,7 +38,7 @@ class CasesController < ApplicationController
 
   def update
     if @case.update(params[:case].permit(CASE_FIELDS))
-      redirect_to @post, notice: 'Case successfully updated.'
+      redirect_to @case, notice: 'Case successfully updated.'
     else
       flash[:error] = "Error: failed to save"
       render :edit
