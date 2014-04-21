@@ -2,6 +2,8 @@
   .medium-9.columns
     = render @posts
   .medium-3.columns.archive
+    %h4.rss
+      = link_to image_tag("rss.png", height: "24px", width: "24px") + " RSS feed", "/posts.atom"
     %h2 Archive
     - @posts.each do |post|
       %p= link_to post.title, post_path(post)

@@ -5,6 +5,11 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.order(created_at: :desc)
+
+    respond_to do |format|
+      format.html
+      format.atom
+    end
   end
 
   def show
