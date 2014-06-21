@@ -15,6 +15,7 @@ class CasesController < ApplicationController
     @cases_by_keyword = Hash[@keywords.map do |keyword|
       [keyword, Case.tagged_with(keyword)]
     end]
+    @keywords_by_initial = @keywords.group_by { |kw| kw[0].upcase } 
   end
 
   def create
