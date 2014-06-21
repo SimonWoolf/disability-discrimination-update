@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation/foundation
 //= require foundation/foundation.topbar
+//= require foundation/foundation.magellan
 //= require_tree .
 $(function() {
   $(document).foundation();

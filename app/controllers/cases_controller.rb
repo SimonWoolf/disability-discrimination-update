@@ -7,6 +7,7 @@ class CasesController < ApplicationController
 
   def index
     @cases = Case.all
+    @cases_by_initial = @cases.group_by { |c| c.title[0].upcase }
   end
 
   def index_by_keyword
