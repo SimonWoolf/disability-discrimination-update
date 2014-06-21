@@ -4,7 +4,7 @@ root 'pages#about'
 
 resources :cases do
   collection do
-    get 'by-keyword' => 'cases#index_by_keyword', as: :by_keyword
+    get 'by-subject' => 'cases#index_by_keyword', as: :by_keyword
   end
 end
 
