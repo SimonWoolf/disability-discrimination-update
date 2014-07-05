@@ -21,6 +21,12 @@ $(document).ready ->
     filter = $('#kwfilter').val()
                            .toLowerCase()
     filter = $.trim(filter) # IE8 breaks on chained .trim()
+    # hide "A", "B" etc headings only when filtering
+    if filter
+      $('.initialrow').hide()
+    else
+      $('.initialrow').show()
+    # the filter:
     $('.keywordrow').filter ->
       $('.keyword', this).html()
                          .toLowerCase()

@@ -11,7 +11,7 @@
 %table{width: '100%'}
   %tbody
     - @keywords_by_initial.each_key.sort.each do |initial|
-      %tr.keywordrow
+      %tr.initialrow
         %td
           %a{name: initial, "data-magellan-destination" => initial}
       - @keywords_by_initial[initial].each do |keyword|
