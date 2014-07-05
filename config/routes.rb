@@ -9,13 +9,17 @@ resources :cases do
 end
 
 
-get 'admin' => 'admin#case_dashboard'
+get 'admin/case' => 'admin#case_dashboard'
+get 'admin/text' => 'admin#text_dashboard'
 get 'admin/blog' => 'admin#blog_dashboard'
+get 'admin/', to: redirect('/admin/case')
 
 get 'about' => 'pages#about'
 get 'contact' => 'pages#contact'
 
 resources :posts
+
+resources :texts, only: [:update]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

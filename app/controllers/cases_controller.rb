@@ -2,7 +2,7 @@ class CasesController < ApplicationController
   http_basic_authenticate_with CREDENTIALS.merge(only: [:create, :update, :destroy])
 
   before_action :retrieve_case, only: [:show, :edit, :update, :destroy]
-  
+
   CASE_FIELDS = [:title, :summary, :keyword_list, :facts, :held, :comment]
 
   def index
@@ -15,7 +15,7 @@ class CasesController < ApplicationController
     @cases_by_keyword = Hash[@keywords.map do |keyword|
       [keyword, Case.tagged_with(keyword)]
     end]
-    @keywords_by_initial = @keywords.group_by { |kw| kw[0].upcase } 
+    @keywords_by_initial = @keywords.group_by { |kw| kw[0].upcase }
   end
 
   def create
@@ -50,7 +50,7 @@ class CasesController < ApplicationController
   def destroy
     @case.destroy
     flash[:notice] = "Case deleted"
-    redirect_to admin_path
+    redirect_to admin_case_path
   end
 
   protected

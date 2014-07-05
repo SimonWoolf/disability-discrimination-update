@@ -8,4 +8,8 @@ class AdminController < ApplicationController
   def blog_dashboard
     @posts = Post.order(created_at: :desc)
   end
+
+  def text_dashboard
+    @texts = Text.all
+  end
 end

@@ -158,7 +158,7 @@ describe CasesController do
       it "redirects to the cases list" do
         _case = Case.create! valid_attributes
         delete :destroy, {:id => _case.to_param}
-        response.should redirect_to(admin_path)
+        response.should redirect_to(admin_case_path)
       end
     end
 

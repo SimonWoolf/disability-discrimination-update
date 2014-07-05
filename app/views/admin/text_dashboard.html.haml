@@ -1,0 +1,6 @@
+= render 'nav'
+
+- @texts.each do |text|
+  = form_for text do |f|
+    = f.text_area :text, label: text.name, rows: 5
+    = f.submit

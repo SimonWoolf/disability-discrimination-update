@@ -37,17 +37,23 @@ $table-border-style: none;
 
 // override for the 'Home' navigation link
 .top-bar .name {
-  line-height: rem-calc(55px); 
+  line-height: rem-calc(55px);
 }
+
 #title {
   font-family: $header-font-family;
   color: $header-font-color;
   font-size: 1.1rem;
-  padding: 0 1rem; 
+  padding: 0 1rem;
 }
 
 h1, label, form, .alert-box {
   font-family: $sans-fonts;
+}
+
+label {
+  font-size: 1em;
+  font-weight: bold;
 }
 
 
