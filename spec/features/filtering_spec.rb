@@ -9,11 +9,11 @@ describe 'filtering', js: true do
     expect(page).to have_content(:visible, 'goodtitle')
     expect(page).not_to have_content(:visible, 'badtitle')
   end
-  
+
   it 'should filter by keyword in js on Cases By Keyword' do
     Case.create!(title: "goodtitle", keyword_list: "happykeyword")
     Case.create!(title: "badtitle", keyword_list: "sadkeyword")
-    visit '/cases/by-keyword'
+    visit '/cases/by-subject'
     fill_in 'kwfilter', with: ' happy '
     expect(page).to have_content(:visible, 'goodtitle')
     expect(page).to have_content(:visible, 'happykeyword')
