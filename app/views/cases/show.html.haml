@@ -5,13 +5,13 @@
 
     %p.keywords= "Subjects: " + @case.keyword_string
 
-    %p= render_markdown(@case.summary)
+    = render_markdown(@case.summary)
 
     %h3 Facts
-    %p= render_markdown(@case.facts)
+    = render_markdown(@case.facts)
 
     %h3 Held
-    %p= render_markdown(@case.held)
+    = render_markdown(@case.held)
 
     %h3 Comment
-    %p= render_markdown(@case.comment)
+    = render_markdown(@case.comment)
