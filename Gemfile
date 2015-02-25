@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.0'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~>2'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'poltergeist'
@@ -28,7 +28,7 @@ gem 'redcarpet'
 
 gem 'thin'
 gem 'haml-rails'
-gem 'foundation-rails'
+gem 'foundation-rails', '~>5.4.5'
 gem 'foundation_rails_helper'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -38,7 +38,7 @@ gem 'rails', '~>4.1.0'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0.rc1'
+gem 'sass-rails', '~> 5.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
